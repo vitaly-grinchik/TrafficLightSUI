@@ -11,10 +11,13 @@ struct LightView: View {
     
     var color: Color
     
+    var opacity: CGFloat
+    
     var body: some View {
         VStack {
             Circle()
                 .foregroundColor(color)
+                .opacity(opacity)
                 .overlay(Circle().stroke(Color.white, lineWidth: 6))
         }
     }
@@ -23,6 +26,6 @@ struct LightView: View {
 
 struct LightView_Previews: PreviewProvider {
     static var previews: some View {
-        LightView(color: .red)
+        LightView(color: .red, opacity: 1.0)
     }
 }

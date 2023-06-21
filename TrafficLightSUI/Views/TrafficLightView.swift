@@ -15,6 +15,8 @@ struct TrafficLightView: View {
     @State var yellowIsOn = false
     @State var greenIsOn = false
     
+    private let lightOffOpacity = 0.2
+    
     private var buttonTitle: String {
         isTapped ? "Next" : "Start"
     }
@@ -25,9 +27,9 @@ struct TrafficLightView: View {
                 PlateView()
                     .padding([.leading, .trailing], 50)
                 VStack(spacing: 40) {
-                    LightView(color: redIsOn ? .red : .red.opacity(0.2))
-                    LightView(color: yellowIsOn ? .yellow : .yellow.opacity(0.2))
-                    LightView(color: greenIsOn ? .green : .green.opacity(0.2))
+                    LightView(color: .red, opacity: redIsOn ? 1 : lightOffOpacity)
+                    LightView(color: .yellow, opacity: yellowIsOn ? 1 : lightOffOpacity)
+                    LightView(color: .green, opacity: greenIsOn ? 1 : lightOffOpacity)
                 }
                 .padding([.top, .bottom], 50)
             }
@@ -41,7 +43,7 @@ struct TrafficLightView: View {
         }
     }
     
-    func buttonTapped() {
+    private func buttonTapped() {
         if !isTapped { isTapped.toggle() }
         
         if redIsOn {
