@@ -15,7 +15,7 @@ struct TrafficLightView: View {
     @State var yellowIsOn = false
     @State var greenIsOn = false
     
-    private let lightOffOpacity = 0.2
+    private let lightOffOpacity = 0.3
     
     private var buttonTitle: String {
         isTapped ? "Next" : "Start"
@@ -34,12 +34,9 @@ struct TrafficLightView: View {
                 .padding([.top, .bottom], 50)
             }
             Spacer()
-            Button(action: buttonTapped) {
-                Text(buttonTitle)
-                    .frame(width: 100)
-                    .font(.title)
+            ButtonView(title: isTapped ? "Next" : "Start") {
+                buttonTapped()
             }
-            .buttonStyle(.borderedProminent)
         }
     }
     

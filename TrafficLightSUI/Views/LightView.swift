@@ -9,9 +9,8 @@ import SwiftUI
 
 struct LightView: View {
     
-    var color: Color
-    
-    var opacity: CGFloat
+    let color: Color
+    let opacity: CGFloat
     
     var body: some View {
         VStack {

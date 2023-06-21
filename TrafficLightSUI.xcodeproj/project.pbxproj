@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D86C7CF02A435D8C00A9EB1D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7CEF2A435D8C00A9EB1D /* ButtonView.swift */; };
 		D8A2B9CD2A409CC700FAE2C1 /* TrafficLightSUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A2B9CC2A409CC700FAE2C1 /* TrafficLightSUIApp.swift */; };
 		D8A2B9D12A409CCF00FAE2C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A2B9D02A409CCF00FAE2C1 /* Assets.xcassets */; };
 		D8A2B9D42A409CD000FAE2C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A2B9D32A409CD000FAE2C1 /* Preview Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D86C7CEF2A435D8C00A9EB1D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		D8A2B9C92A409CC700FAE2C1 /* TrafficLightSUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrafficLightSUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A2B9CC2A409CC700FAE2C1 /* TrafficLightSUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLightSUIApp.swift; sourceTree = "<group>"; };
 		D8A2B9D02A409CCF00FAE2C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				D8A2B9DE2A40A5E900FAE2C1 /* TrafficLightView.swift */,
 				D8A2B9DA2A409D4B00FAE2C1 /* LightView.swift */,
 				D8A2B9DC2A40A00300FAE2C1 /* PlateView.swift */,
+				D86C7CEF2A435D8C00A9EB1D /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				D8A2B9DB2A409D4B00FAE2C1 /* LightView.swift in Sources */,
 				D8A2B9CD2A409CC700FAE2C1 /* TrafficLightSUIApp.swift in Sources */,
+				D86C7CF02A435D8C00A9EB1D /* ButtonView.swift in Sources */,
 				D8A2B9DD2A40A00300FAE2C1 /* PlateView.swift in Sources */,
 				D8A2B9DF2A40A5E900FAE2C1 /* TrafficLightView.swift in Sources */,
 			);
