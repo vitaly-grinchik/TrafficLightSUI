@@ -13,6 +13,8 @@ struct PlateView: View {
         Rectangle()
             .border(.black, width: 8)
             .cornerRadius(40)
+            .overlay(RoundedRectangle(cornerRadius: 40)
+                .stroke(.gray, lineWidth: 8))
     }
 }
 
