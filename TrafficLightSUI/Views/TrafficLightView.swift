@@ -9,19 +9,21 @@ import SwiftUI
 
 struct TrafficLightView: View {
     
-    @State var isTapped = false
+    @State private var isTapped = false
     
-    @State var redIsOn = false
-    @State var yellowIsOn = false
-    @State var greenIsOn = false
+    @State private var redIsOn = false
+    @State private var yellowIsOn = false
+    @State private var greenIsOn = false
     
-    private let lightOffOpacity = 0.3
     
     private var buttonTitle: String {
         isTapped ? "Next" : "Start"
     }
     
     var body: some View {
+        
+        let lightOffOpacity = 0.3
+        
         VStack(spacing: 50) {
             ZStack {
                 PlateView()
@@ -33,8 +35,10 @@ struct TrafficLightView: View {
                 }
                 .padding([.top, .bottom], 50)
             }
+            
             Spacer()
-            ButtonView(title: isTapped ? "Next" : "Start") {
+            
+            ButtonView(title: buttonTitle) {
                 buttonTapped()
             }
         }
